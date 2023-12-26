@@ -1,0 +1,436 @@
+/* navbar */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+
+#navbar-section {
+  /* position: fixed; */
+  background-color: white;
+  top: 0;
+  width: 100%;
+  /* z-index: 1000; */
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+li :hover {
+  background-color: #e6f2ff;
+}
+
+.main-header-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 20px;
+}
+
+.main-header {
+  background-color: rgb(241, 247, 247);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* Use flexbox to arrange images in a row */
+  justify-content: space-between;
+  align-items: center;
+  /* Align images vertically */
+  padding: 15px;
+  /* Optional: Add padding */
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* slider section  */
+
+#slider {
+  /* margin-top: 270px; */
+  /* z-index: 999; */
+}
+
+.carousel-inner {
+  display: block;
+  margin-top: 100px;
+  margin: auto;
+  width: 90%;
+  max-height: 600px !important;
+}
+
+
+/* about section  */
+
+.update-continer {
+  margin-top: 40px;
+  display: flex;
+  background-color: #e6f2ff;
+  margin: 40px 85px;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* Align images vertically */
+  padding: 15px;
+  /* Optional: Add padding */
+}
+
+.update-container-items {
+  display: block;
+  margin: auto;
+  text-align: justify;
+  overflow-wrap: break-word;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* <!-- Dignitories and Officilas --> */
+
+.digitories-container {
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 15px;
+}
+
+.digitories-container-items {
+  display: block;
+  margin: auto;
+  text-align: justify;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+
+.digitories-container-items img {
+  margin: 0;
+}
+
+
+
+
+/* <!-- imporatnat info section  --> */
+
+
+#imp {
+  padding-top: 40px;
+}
+
+.imp-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0%;
+  gap: 25px;
+  width: 100%;
+  max-width: 1350px;
+  margin: auto;
+}
+
+.imp-box {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #fff;
+}
+
+.imp-box>div:first-child {
+  top: 0;
+  width: 100%;
+  background-color: #1b6aa2;
+  padding: 10px 10px;
+  color: #fff;
+}
+
+
+
+.imp-box>div:nth-child(2) {
+  margin-top: 20px;
+  /* Space for fixed header */
+  overflow-y: hidden;
+  /* Hide the actual scrollbar */
+}
+
+.imp-box ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  animation: autoscroll 20s linear infinite;
+  /* Adjust duration as needed */
+}
+
+@keyframes autoscroll {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(calc(-100% - 20px));
+    /* Adjust as needed */
+  }
+}
+
+.imp-box ol::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+.imp-box ol {
+  scrollbar-width: none;
+}
+
+.imp-box a {
+  text-decoration: none;
+  color: #333;
+}
+
+.imp-box a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+/* Posts SECTOIN  */
+.Posts-container {
+  margin-top: 40px;
+}
+
+.Posts-container-items {
+  display: block;
+  margin: auto;
+  text-align: justify;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 46px;
+}
+
+/* LINKS  */
+#links {
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+  background-color: #e6f2ff;
+  max-width: 1350px;
+  height: 200px;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.link-items {
+  margin-top: -15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 130px;
+  height: 130px;
+  background-color: white;
+
+}
+
+
+/* footer section  */
+
+.footer {
+  margin-top: 40px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+
+
+
+}
+
+.foot-item {
+  display: block;
+  margin: auto;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  height: 465px;
+}
+
+.foot-item h5 {
+  text-align: left;
+
+}
+
+.foot-item p {
+  text-decoration: #1b6aa2;
+  text-align: left;
+}
+
+.foot-item p a {
+  text-decoration: none;
+}
+
+.copyright {
+  background: #000;
+  color: white;
+  text-align: center;
+  height: 100px;
+}
+
+
+
+
+
+
+
+/* For screens smaller than 768px (typical tablets) */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    /* Change to a column layout on smaller screens */
+  }
+
+  .main-header-img img {
+    margin: 20px 0;
+    /* Adjust image margin */
+  }
+
+  .update-continer {
+    flex-direction: column;
+    margin: 20px;
+    /* Change layout and margin for about section */
+  }
+
+  .update-container-items {
+    width: 100%;
+    /* Adjust width for smaller screens */
+  }
+
+  .digitories-container-items {
+    gap: 20px;
+    /* Adjust gap between items */
+  }
+
+  .digitories-container-items img {
+    width: 100%;
+    /* Ensure images take full width */
+  }
+
+  .imp-container {
+    flex-direction: column;
+    /* Change layout for important info section */
+  }
+
+  .imp-box {
+    width: 100%;
+    /* Adjust width for smaller screens */
+  }
+
+  .Posts-container-items {
+    gap: 20px;
+    /* Adjust gap between items */
+  }
+  
+  /* Add further responsive adjustments as needed */
+}
+
+
+
+
+/* For screens smaller than 480px (typical smartphones) */
+@media (max-width: 480px) {
+  /* Apply additional styles for even smaller screens */
+}
+
+/* For screens smaller than 768px (typical tablets) */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    /* Change to a column layout on smaller screens */
+  }
+
+  .main-header-img img {
+    margin: 20px 0;
+    /* Adjust image margin */
+  }
+
+  .update-continer {
+    flex-direction: column;
+    margin: 20px;
+    /* Change layout and margin for about section */
+  }
+
+  .update-container-items {
+    width: 100%;
+    /* Adjust width for smaller screens */
+  }
+
+  .digitories-container-items {
+    gap: 20px;
+    /* Adjust gap between items */
+  }
+
+  .digitories-container-items img {
+    width: 100%;
+    /* Ensure images take full width */
+  }
+
+  .imp-container {
+    flex-direction: column;
+    /* Change layout for important info section */
+  }
+
+  .imp-box {
+    width: 100%;
+    /* Adjust width for smaller screens */
+  }
+
+  .Posts-container-items {
+    gap: 20px;
+    /* Adjust gap between items */
+  }
+  
+  /* Add further responsive adjustments as needed */
+}
+
+
+
+
+
+
+/* For screens smaller than 480px (typical smartphones) */
+@media (max-width: 480px) {
+  /* Apply additional styles for even smaller screens */
+}
+/* For smaller screens */
+@media (max-width: 768px) {
+  .foot-item {
+    padding: 10px;
+    /* Adjust padding */
+  }
+}
