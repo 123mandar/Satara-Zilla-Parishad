@@ -435,5 +435,16 @@ img {
   div.card {
     width: 8rem;
   }
+  .foot-item{
+    margin: revert-layer; 
+  }
+
+  .foot-item p a{
+    font-size: 13px;
+  }
+
+  .foot-item h5{
+    font-size: 20px;
+  }
 
 }
