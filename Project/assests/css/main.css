@@ -359,9 +359,7 @@ img {
   .navbar-toggler {
     padding: 0px;
   }
-  #navbar-section {
-    position: fixed;
-  }
+  
   
 }
 
@@ -374,7 +372,7 @@ img {
     width: 180px;
   }
 
-
+ 
   p {
     font-size: 10px;
     width: 70%;
@@ -396,6 +394,7 @@ img {
     margin: 0;
   }
 
+ 
   #links {
     height: 130px;
   }
@@ -436,4 +435,5 @@ img {
   div.card {
     width: 8rem;
   }
+
 }
